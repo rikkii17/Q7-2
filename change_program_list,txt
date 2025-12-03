@@ -1,0 +1,39 @@
+全体の変更{
+    単一ファイルの場合可読性が低下するため、関数プロトタイプ宣言をヘッダーファイルに移動し、コードをファイル分割（中身はREADME参照）
+}
+
+main.c{
+    変数名を可読性、安全性を考慮して変更
+    g_book_data_head→global_book_data_head
+    buf→string_buffer
+    out_fp→output_file_pointer
+    posit→new_book_data
+}
+
+app.h,app.c{
+    変数名、関数名を可読性、安全性を考慮して修正
+
+}
+
+system_app.h,system_app.c{
+    変数名、関数名を可読性、安全性を考慮して修正
+    input_data_fromFile→input_book_data_from_file
+    temp→inport_book_data
+    aa→book_name
+    bb→author
+    cc→publicher
+    dd→price
+    ee→isbn
+    ff→note
+}
+
+helper.h,helper.c{
+    変数名、関数名を可読性、安全性を考慮して修正
+    chop→string_chop
+    my_malloc→safe_malloc
+}
+
+config.h{
+    マジックナンバーを定数化
+    MAX_BUFFFER
+}
