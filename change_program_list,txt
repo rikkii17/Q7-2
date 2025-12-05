@@ -1,39 +1,43 @@
-å…¨ä½“ã®å¤‰æ›´{
-    å˜ä¸€ãƒ•ã‚¡ã‚¤ãƒ«ã®å ´åˆå¯èª­æ€§ãŒä½ä¸‹ã™ã‚‹ãŸã‚ã€é–¢æ•°ãƒ—ãƒ­ãƒˆã‚¿ã‚¤ãƒ—å®£è¨€ã‚’ãƒ˜ãƒƒãƒ€ãƒ¼ãƒ•ã‚¡ã‚¤ãƒ«ã«ç§»å‹•ã—ã€ã‚³ãƒ¼ãƒ‰ã‚’ãƒ•ã‚¡ã‚¤ãƒ«åˆ†å‰²ï¼ˆä¸­èº«ã¯READMEå‚ç…§ï¼‰
+‘S‘Ì‚Ì•ÏX{
+    ’Pˆêƒtƒ@ƒCƒ‹‚Ìê‡‰Â“Ç«‚ª’á‰º‚·‚é‚½‚ßAŠÖ”ƒvƒƒgƒ^ƒCƒvéŒ¾‚ğƒwƒbƒ_[ƒtƒ@ƒCƒ‹‚ÉˆÚ“®‚µAƒR[ƒh‚ğƒtƒ@ƒCƒ‹•ªŠ„i’†g‚ÍREADMEQÆj
 }
 
 main.c{
-    å¤‰æ•°åã‚’å¯èª­æ€§ã€å®‰å…¨æ€§ã‚’è€ƒæ…®ã—ã¦å¤‰æ›´
-    g_book_data_headâ†’global_book_data_head
-    bufâ†’string_buffer
-    out_fpâ†’output_file_pointer
-    positâ†’new_book_data
+    •Ï”–¼‚ğ‰Â“Ç«AˆÀ‘S«‚ğl—¶‚µ‚Ä•ÏX
+    g_book_data_head¨global_book_data_head
+    buf¨string_buffer
+    out_fp¨output_file_pointer
+    posit¨new_book_data
 }
 
 app.h,app.c{
-    å¤‰æ•°åã€é–¢æ•°åã‚’å¯èª­æ€§ã€å®‰å…¨æ€§ã‚’è€ƒæ…®ã—ã¦ä¿®æ­£
+    •Ï”–¼AŠÖ”–¼‚ğ‰Â“Ç«AˆÀ‘S«‚ğl—¶‚µ‚ÄC³
 
 }
 
 system_app.h,system_app.c{
-    å¤‰æ•°åã€é–¢æ•°åã‚’å¯èª­æ€§ã€å®‰å…¨æ€§ã‚’è€ƒæ…®ã—ã¦ä¿®æ­£
-    input_data_fromFileâ†’input_book_data_from_file
-    tempâ†’inport_book_data
-    aaâ†’book_name
-    bbâ†’author
-    ccâ†’publicher
-    ddâ†’price
-    eeâ†’isbn
-    ffâ†’note
+    •Ï”–¼AŠÖ”–¼‚ğ‰Â“Ç«AˆÀ‘S«‚ğl—¶‚µ‚ÄC³
+    input_data_fromFile¨input_book_data_from_file
+    temp¨inport_book_data
+    aa¨book_name
+    bb¨author
+    cc¨publicher
+    dd¨price
+    ee¨isbn
+    ff¨note
 }
 
 helper.h,helper.c{
-    å¤‰æ•°åã€é–¢æ•°åã‚’å¯èª­æ€§ã€å®‰å…¨æ€§ã‚’è€ƒæ…®ã—ã¦ä¿®æ­£
-    chopâ†’string_chop
-    my_mallocâ†’safe_malloc
+    •Ï”–¼AŠÖ”–¼‚ğ‰Â“Ç«AˆÀ‘S«‚ğl—¶‚µ‚ÄC³
+    chop¨string_chop
+    my_malloc¨safe_malloc
+    add_data¨add_book_data
+    new_data¨new_book_data
+
+    add_book_data“à‚Ìfor\•¶‚ğ‰Â“Ç«Œüã‚Ì‚½‚ß‚És‚ğ•ª—£‚µAwhile\•¶‚É‚ÄƒvƒƒZƒX‚ğ’iŠK•ª‚¯‚µ‚½B
 }
 
 config.h{
-    ãƒã‚¸ãƒƒã‚¯ãƒŠãƒ³ãƒãƒ¼ã‚’å®šæ•°åŒ–
+    ƒ}ƒWƒbƒNƒiƒ“ƒo[‚ğ’è”‰»
     MAX_BUFFFER
 }

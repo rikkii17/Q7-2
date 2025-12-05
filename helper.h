@@ -8,19 +8,25 @@
 
 void string_chop(char *str);
 /*
-    æ–‡å­—åˆ—ã‹ã‚‰æ”¹è¡Œã‚’å–ã‚Šé™¤ãé–¢æ•°(chopã®å¤‰æ›´åž‹)
-    å¼•æ•°1: char *str  æ”¹è¡Œã‚’å–ã‚Šé™¤ãå¯¾è±¡ã®æ–‡å­—åˆ—ãƒã‚¤ãƒ³ã‚¿
-    æˆ»ã‚Šå€¤: void
+    •¶Žš—ñ‚©‚ç‰üs‚ðŽæ‚èœ‚­ŠÖ”(chop‚Ì•ÏXŒ^)
+    ˆø”1: char *str  ‰üs‚ðŽæ‚èœ‚­‘ÎÛ‚Ì•¶Žš—ñƒ|ƒCƒ“ƒ^
+    –ß‚è’l: void
 */
 
 void *safe_malloc(size_t size);
 /*
-    ãƒ¡ãƒ¢ãƒªç¢ºä¿ã‚’å®‰å…¨ã«è¡Œã†é–¢æ•°(my_mallocã®å¤‰æ›´åž‹)
-    å¼•æ•°1: size_t size  ç¢ºä¿ã™ã‚‹ãƒ¡ãƒ¢ãƒªã®ã‚µã‚¤ã‚º  //size_tã¯stdlib.hã§å®šç¾©ã•ã‚Œã¦ã„ã‚‹ç¬¦å·ãªã—æ•´æ•°åž‹
-    æˆ»ã‚Šå€¤: void* ç¢ºä¿ã—ãŸãƒ¡ãƒ¢ãƒªã®ãƒã‚¤ãƒ³ã‚¿
+    ƒƒ‚ƒŠŠm•Û‚ðˆÀ‘S‚És‚¤ŠÖ”(my_malloc‚Ì•ÏXŒ^)
+    ˆø”1: size_t size  Šm•Û‚·‚éƒƒ‚ƒŠ‚ÌƒTƒCƒY  //size_t‚Ístdlib.h‚Å’è‹`‚³‚ê‚Ä‚¢‚é•„†‚È‚µ®”Œ^
+    –ß‚è’l: void* Šm•Û‚µ‚½ƒƒ‚ƒŠ‚Ìƒ|ƒCƒ“ƒ^
 */
 
 char *string_duplicate(char *duplicate_string);
+/*
+    duplicate_string‚ð•¡»‚µ‚Ä•Ô‚è’l‚É‚»‚Ìƒ|ƒCƒ“ƒ^‚ð•Ô‚·ŠÖ”
+    ˆø”1:duplicate_string  •¡»‚·‚é•¶Žš—ñ‚Ìæ“ªpointer
+    •Ô‚è’l:char*    •¡»‚µ‚½•¶Žš—ñ‚Ìƒƒ‚ƒŠ‚Ìæ“ªpointer
+*/
 
+void add_book_data(BookData *new_book_data);
 
 #endif // COMPONENT_H

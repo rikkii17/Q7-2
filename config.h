@@ -1,8 +1,9 @@
 #ifndef CONFIG_H
 #define CONFIG_H
+#include<stdlib.h>
 /*
-ä¸€å†Šå½“ãŸã‚Šã®ãƒ‡ãƒ¼ã‚¿ã‚’ä¿æŒã™ã‚‹æ§‹é€ ä½“
-å„è¦ç´ ã®å¤§ãã•ã‚’å‹•çš„ã«å¤‰æ›´ã™ã‚‹ã£ãŸã‚ã€(malloc)å„è¦ã¯pointå‹ã«ã™ã‚‹
+ˆêû“–‚½‚è‚Ìƒf[ƒ^‚ğ•Û‚·‚é\‘¢‘Ì
+Še—v‘f‚Ì‘å‚«‚³‚ğ“®“I‚É•ÏX‚·‚é‚Á‚½‚ßA(malloc)Še—v‚ÍpointŒ^‚É‚·‚é
 */
 
 typedef struct BookData_tag{
@@ -16,5 +17,7 @@ typedef struct BookData_tag{
 } BookData;
 
 #define MAX_BUFFER 1024
+
+BookData *global_book_data_head;
 
 #endif // CONFIG_H

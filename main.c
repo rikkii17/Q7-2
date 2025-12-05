@@ -7,9 +7,8 @@
 #include"helper.h"
 #include"system_app.h"
 
-
 //global variable
-BookData  *global_book_data_head = NULL;
+
 
 int main(void);
 
@@ -22,9 +21,13 @@ int main(void){
 
     input_book_data_from_file();
 
-    
-    
+    /*while(1){
 
+    }*/
+
+    
+    printf("check1");
+    return 0;
 }
 
 
