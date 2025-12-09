@@ -86,7 +86,10 @@ void input_data(BookData *bookdata_pointer){
     bookdata_pointer->publisher = input_string(stdin);
     printf("‰¿Ši>");
     bookdata_pointer->price = input_number(stdin);
-    printf("ISBN");
-
-
+    printf("ISBN>");
+    bookdata_pointer->isbn = input_string(stdin);
+    printf("”õl>");
+    bookdata_pointer->note = input_string(stdin);
+    
+    return;
 }
