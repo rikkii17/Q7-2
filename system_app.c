@@ -58,7 +58,35 @@ char *input_string(FILE *filepointer){
     return(string_pointer);
 }
 
+int input_number(FILE *filepointer){
+    static char input_buffer[1024];
+    int input_number;
+    int status;
+
+    while(1){
+        input_line(input_buffer,MAX_BUFFER,filepointer);
+        status = sscanf(input_buffer,"%d",&input_number);
+        if(status != 1){
+            printf("入力エラー:数値を入力してください\n");
+            continue;
+        }
+        else{
+            break;
+        }
+    }
+return(input_number);
+}
+
 void input_data(BookData *bookdata_pointer){
     printf("署名>");
     bookdata_pointer->book_name = input_string(stdin);
+    printf("著者>");
+    bookdata_pointer->author =input_string(stdin);
+    printf("出版社>");
+    bookdata_pointer->publisher = input_string(stdin);
+    printf("価格>");
+    bookdata_pointer->price = input_number(stdin);
+    printf("ISBN");
+
+
 }

@@ -14,6 +14,8 @@ void input_line(char *buffer ,int datasize,FILE *filepointer);
 
 char *input_string(FILE *filepointer);
 
+int input_number(FILE *filepointer);
+
 void input_data(BookData *bookdata_pointer);
 
 

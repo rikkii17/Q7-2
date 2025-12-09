@@ -26,6 +26,8 @@ system_app.h,system_app.c{
     dd→price
     ee→isbn
     ff→note
+
+    input_numberの中にあるエラーハンドリングのif文に安全性のためcontinueにて戻すコードを実装。
 }
 
 helper.h,helper.c{
