@@ -30,11 +30,18 @@ int main(void){
         printf(">");
         input_line(string_buffer,MAX_BUFFER,stdin);
         
+        switch (string_buffer[0]){
+
+            case '1':
+                registry_add_data();
+                
+        }
+
         break;
     }
 
     
-    printf("check3");
+    printf("check4");
     return 0;
 }
 

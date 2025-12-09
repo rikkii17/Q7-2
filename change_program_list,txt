@@ -12,6 +12,7 @@ main.c{
 
 app.h,app.c{
     変数名、関数名を可読性、安全性を考慮して修正
+    regist_data→registry_add_data
 
 }
 

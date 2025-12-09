@@ -12,6 +12,10 @@ void input_book_data_from_file(void);
 
 void input_line(char *buffer ,int datasize,FILE *filepointer);
 
+char *input_string(FILE *filepointer);
+
+void input_data(BookData *bookdata_pointer);
+
 
 
 #endif

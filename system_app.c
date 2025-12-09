@@ -48,3 +48,17 @@ void input_line(char *string_buffer ,int datasize,FILE *filepointer){
     }
     string_chop(string_buffer);
 }
+
+char *input_string(FILE *filepointer){
+    static char string_buffer[MAX_BUFFER];
+    char *string_pointer;
+
+    input_line(string_buffer,MAX_BUFFER,filepointer);
+    string_pointer = string_duplicate(string_buffer);
+    return(string_pointer);
+}
+
+void input_data(BookData *bookdata_pointer){
+    printf("–¼>");
+    bookdata_pointer->book_name = input_string(stdin);
+}

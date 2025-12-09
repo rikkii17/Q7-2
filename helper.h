@@ -29,4 +29,8 @@ char *string_duplicate(char *duplicate_string);
 
 void add_book_data(BookData *new_book_data);
 
+
+
+
+
 #endif // COMPONENT_H

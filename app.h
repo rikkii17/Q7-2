@@ -10,6 +10,8 @@
 #include"config.h"
 #include"helper.h"
 
+void registry_add_data(void);
+
 
 
 
