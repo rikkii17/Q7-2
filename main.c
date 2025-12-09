@@ -28,11 +28,13 @@ int main(void){
         printf("}‘ŠÇ—ƒVƒXƒeƒ€\n");
         printf("1\t“o˜^\n‚Q\tˆê——•\Ž¦\n3\tŒŸõ\nE\tI—¹\n");
         printf(">");
+        input_line(string_buffer,MAX_BUFFER,stdin);
         
+        break;
     }
 
     
-    printf("check1");
+    printf("check3");
     return 0;
 }
 

@@ -10,6 +10,8 @@
 
 void input_book_data_from_file(void);
 
+void input_line(char *buffer ,int datasize,FILE *filepointer);
+
 
 
 #endif

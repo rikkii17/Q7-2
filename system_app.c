@@ -1,5 +1,5 @@
-#include"helper.h"
 #include"config.h"
+#include"helper.h"
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -39,4 +39,12 @@ void input_book_data_from_file(void){
         }
     }
 
+}
+
+void input_line(char *string_buffer ,int datasize,FILE *filepointer){
+    if(fgets(string_buffer,datasize,filepointer) == NULL){
+        fprintf(stderr,"èIóπÇµÇ‹Ç∑\n");
+        exit(0);
+    }
+    string_chop(string_buffer);
 }
