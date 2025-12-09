@@ -77,7 +77,7 @@ int input_number(FILE *filepointer){
 return(input_number);
 }
 
-void input_data(BookData *bookdata_pointer){
+void input_book_data(BookData *bookdata_pointer){
     printf("–¼>");
     bookdata_pointer->book_name = input_string(stdin);
     printf("’˜ŽÒ>");

@@ -16,7 +16,7 @@ char *input_string(FILE *filepointer);
 
 int input_number(FILE *filepointer);
 
-void input_data(BookData *bookdata_pointer);
+void input_book_data(BookData *bookdata_pointer);
 
 
 
